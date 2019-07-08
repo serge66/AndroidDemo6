@@ -2,6 +2,7 @@ package com.example.androiddemo6;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.google.gson.Gson;
 import com.taobao.idlefish.flutterboost.containers.BoostFlutterActivity;
@@ -25,7 +26,7 @@ public class CommonFlutterActivity extends BoostFlutterActivity {
             String json = intent.getStringExtra("json");
             Gson gson = new Gson();
             map = gson.fromJson(json, Map.class);
-
+            Log.w("lsj", "json=" + json);
             /*Map map = UrlUtil.parseParams(url);
             userid = map.get("userid").toString();
             _ticket_ = map.get("_ticket_").toString();

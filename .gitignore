@@ -69,4 +69,5 @@ fastlane/readme.md
 app/debug/output.json
 app/release/output.json
 app/release/
-app/release/output.json
+
+
